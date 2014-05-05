@@ -1,0 +1,66 @@
+renders[''] = {
+    'manualpois': [{
+        'id': 'Main Base',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Main Base',
+        'description': 'Visit for all your farming needs',
+    }, {
+        'id': 'Luton',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Luton',
+        'description': 'A great source of Villagers!',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Chateau Intern',
+        'description': '',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Jim\'s Land',
+        'description': 'Like wood? Jim does!',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'The Badlands',
+        'description': 'Perry\'s Folly',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Casa del George',
+        'description': 'Only a quick 1.5 hour scenic run',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Far Away',
+        'description': '5 minutes by train!',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Perry 2.0',
+        'description': 'Can you find the trapdoor?',
+    }, {
+        'id': '',
+        'x': 0,
+        'y': 0,
+        'z': 0,
+        'name': 'Arctic Base 1',
+        'description': 'Appropriate security clearance is required to access this facility.',
+    }]
+}
