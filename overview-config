@@ -61,6 +61,13 @@ manualpois = [{
     'z': 260,
     'name': 'Arctic Base 1',
     'description': 'Appropriate security clearance is required to access this facility.',
+}, {
+    'id': 'horse-base',
+    'x': -219,
+    'y': 64,
+    'z': 1544,
+    'name': 'Horse Base',
+    'description': 'Need a horse? Go here.',
 }]
 
 renders[''] = {  # noqa
