@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ "$#" -ne 1 ]; then
+    echo "Specify a version, e.g. 1.7.9"
+    exit(1)
+fi
+
 version=$1
 
 path="$HOME/.minecraft/versions/${version}/"
