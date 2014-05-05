@@ -19,9 +19,6 @@
 # Allow ping
 -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
 
-# Allows IRC connections for ZNC
--A INPUT -p tcp -m state --state NEW --dport 6668 -j ACCEPT
-
 # minecraft
 -A INPUT -p tcp -m tcp --dport 25565 -j ACCEPT
 
