@@ -2,15 +2,12 @@
 
 # Generate the output
 config="$HOME/config/overviewer-config"
+logs="/var/log/minecraft/overviewer.log"
 overviewer="/usr/bin/overviewer.py"
-
-$overviewer --config=$config $HOME/minecraft $HOME/overviewer
-
-# Push to s3 and invalidate the cloudfront distro
 s3cmd="/usr/bin/s3cmd"
 
-day="date +%d"
-month="date +%m"
-year="date +%Y"
+$overviewer --config=$config >> $logs
 
-$s3cmd --cf-invalidate sync $HOME/overviewer s3://minecuna-overviewer/$year/$month/$day/
+# Push to s3 and invalidate the cloudfront distro
+
+$s3cmd --cf-invalidate sync --delete-removed --no-progress $HOME/overviewer s3://minecuna-overviewer >> $logs
