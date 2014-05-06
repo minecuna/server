@@ -70,6 +70,59 @@ manualpois = [{
     'description': 'Need a horse? Go here.',
 }]
 
-renders[''] = {  # noqa
+worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
+
+renders["day-0"] = {  # noqa
+    "world": "minecuna",
+    "title": "Day: North",
+    "rendermode": "smooth_lighting",
+    "northdirection": "upper-left",
     'manualpois': manualpois,
 }
+
+renders["day-90"] = {  # noqa
+    "world": "minecuna",
+    "title": "Day: East",
+    "rendermode": "smooth_lighting",
+    "northdirection": "upper-right",
+    'manualpois': manualpois,
+}
+
+renders["day-180"] = {  # noqa
+    "world": "minecuna",
+    "title": "Day: South",
+    "rendermode": "smooth_lighting",
+    "northdirection": "lower-right",
+    'manualpois': manualpois,
+}
+
+renders["day-270"] = {  # noqa
+    "world": "minecuna",
+    "title": "Day: West",
+    "rendermode": "smooth_lighting",
+    "northdirection": "lower-left",
+    'manualpois': manualpois,
+}
+
+renders["night"] = {  # noqa
+    "world": "minecuna",
+    "title": "Night",
+    "rendermode": "smooth_night",
+    'manualpois': manualpois,
+}
+
+renders["nether"] = {  # noqa
+    "world": "minecuna",
+    "title": "Nether",
+    "rendermode": "nether",
+    "dimension": "nether",
+}
+
+renders["theend"] = {  # noqa
+    "world": "minecuna",
+    "title": "The End",
+    "dimension": "end",
+    "rendermode": "smooth_lighting",
+}
+
+outputdir = "/home/minecuna/overviewer"
