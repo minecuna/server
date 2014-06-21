@@ -1,55 +1,55 @@
 # flake8: noqa
 manualpois = [{
-    'id': 'main-base',
+    'id': 'base',
     'x': 196,
     'y': 64,
     'z': 236,
     'name': 'Main Base',
     'description': 'Visit for all your farming needs',
 }, {
-    'id': 'luton',
+    'id': 'town',
     'x': -228,
     'y': 64,
     'z': 241,
     'name': 'Luton',
     'description': 'A great source of Villagers!',
 }, {
-    'id': 'chateau-intern',
+    'id': 'base',
     'x': 239,
     'y': 64,
     'z': -759,
     'name': 'Chateau Intern',
     'description': '',
 }, {
-    'id': 'jims-land',
+    'id': 'base',
     'x': 220,
     'y': 64,
     'z': 723,
     'name': 'Jim\'s Land',
     'description': 'Like wood? Jim does!',
 }, {
-    'id': 'the-badlands',
+    'id': 'base',
     'x': 524,
     'y': 64,
     'z': 201,
     'name': 'The Badlands',
     'description': 'Perry\'s Folly',
 }, {
-    'id': 'casa-del-george',
+    'id': 'base',
     'x': -4433,
     'y': 64,
     'z': 297,
     'name': 'Casa del George',
     'description': 'Only a quick 1.5 hour scenic run',
 }, {
-    'id': 'far-away',
+    'id': 'base',
     'x': 2614,
     'y': 64,
     'z': 249,
     'name': 'Far Away',
     'description': '5 minutes by train!',
 }, {
-    'id': 'perry-2.0',
+    'id': 'base',
     'x': 1264,
     'y': 64,
     'z': -3350,
@@ -63,7 +63,7 @@ manualpois = [{
     'name': 'Arctic Base 1',
     'description': 'Appropriate security clearance is required to access this facility.',
 }, {
-    'id': 'horse-base',
+    'id': 'base',
     'x': -219,
     'y': 64,
     'z': 1544,
@@ -73,12 +73,67 @@ manualpois = [{
 
 worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
 
+def bases(poi):
+    html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
+    if poi['id'] == 'base':
+        try:
+            return (poi['name'], html.format(poi['name'], 'Base', poi['description']))
+        except KeyError:
+            return poi['name'] + '\n'
+
+def farms(poi):
+    html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
+    if poi['id'] == 'farm':
+        try:
+            return (poi['name'], html.format(poi['name'], 'Farm', poi['description']))
+        except KeyError:
+            return poi['name'] + '\n'
+
+def mines(poi):
+    html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
+    if poi['id'] == 'mine':
+        try:
+            return (poi['name'], html.format(poi['name'], 'Mine', poi['description']))
+        except KeyError:
+            return poi['name'] + '\n'
+
+def towns(poi):
+    html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
+    if poi['id'] == 'town':
+        try:
+            return (poi['name'], html.format(poi['name'], 'Town', poi['description']))
+        except KeyError:
+            return poi['name'] + '\n'
+
+markers = [{
+    'name': 'Bases',
+    'filterFunction': bases,
+    'icon': 'icons/marker_tower_red.png',
+    'checked': False,
+}, {
+    'name': 'Farms',
+    'filterFunction': farms,
+    'icon': 'icons/marker_factory_red.png',
+    'checked': False,
+}, {
+    'name': 'Mines',
+    'filterFunction': mines,
+    'icon': 'icons/marker_mine_red.png',
+    'checked': False,
+}, {
+    'name': 'Towns',
+    'filterFunction': towns,
+    'icon': 'icons/marker_town_red.png',
+    'checked': False,
+}]
+
 renders["day-0"] = {  # noqa
     "world": "minecuna",
     "title": "Day: North",
     "rendermode": "smooth_lighting",
     "northdirection": "upper-left",
     'manualpois': manualpois,
+    'markers': markers,
 }
 
 renders["day-90"] = {  # noqa
@@ -87,6 +142,7 @@ renders["day-90"] = {  # noqa
     "rendermode": "smooth_lighting",
     "northdirection": "upper-right",
     'manualpois': manualpois,
+    'markers': markers,
 }
 
 renders["day-180"] = {  # noqa
@@ -95,6 +151,7 @@ renders["day-180"] = {  # noqa
     "rendermode": "smooth_lighting",
     "northdirection": "lower-right",
     'manualpois': manualpois,
+    'markers': markers,
 }
 
 renders["day-270"] = {  # noqa
@@ -103,6 +160,7 @@ renders["day-270"] = {  # noqa
     "rendermode": "smooth_lighting",
     "northdirection": "lower-left",
     'manualpois': manualpois,
+    'markers': markers,
 }
 
 renders["night"] = {  # noqa
@@ -110,6 +168,7 @@ renders["night"] = {  # noqa
     "title": "Night",
     "rendermode": "smooth_night",
     'manualpois': manualpois,
+    'markers': markers,
 }
 
 renders["nether"] = {  # noqa
