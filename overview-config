@@ -148,6 +148,8 @@ markers = [{
     'checked': False,
 }]
 
+MINZOOM = 3
+
 renders["day-0"] = {  # noqa
     "world": "minecuna",
     "title": "Day: North",
@@ -155,6 +157,7 @@ renders["day-0"] = {  # noqa
     "northdirection": "upper-left",
     'manualpois': manualpois,
     'markers': markers,
+    'minzoom': MINZOOM,
 }
 
 renders["day-90"] = {  # noqa
@@ -164,6 +167,7 @@ renders["day-90"] = {  # noqa
     "northdirection": "upper-right",
     'manualpois': manualpois,
     'markers': markers,
+    'minzoom': MINZOOM,
 }
 
 renders["day-180"] = {  # noqa
@@ -173,6 +177,7 @@ renders["day-180"] = {  # noqa
     "northdirection": "lower-right",
     'manualpois': manualpois,
     'markers': markers,
+    'minzoom': MINZOOM,
 }
 
 renders["day-270"] = {  # noqa
@@ -182,6 +187,7 @@ renders["day-270"] = {  # noqa
     "northdirection": "lower-left",
     'manualpois': manualpois,
     'markers': markers,
+    'minzoom': MINZOOM,
 }
 
 renders["night"] = {  # noqa
@@ -190,6 +196,7 @@ renders["night"] = {  # noqa
     "rendermode": "smooth_night",
     'manualpois': manualpois,
     'markers': markers,
+    'minzoom': MINZOOM,
 }
 
 renders["nether"] = {  # noqa
@@ -197,6 +204,7 @@ renders["nether"] = {  # noqa
     "title": "Nether",
     "rendermode": "nether",
     "dimension": "nether",
+    'minzoom': MINZOOM,
 }
 
 renders["theend"] = {  # noqa
@@ -204,6 +212,7 @@ renders["theend"] = {  # noqa
     "title": "The End",
     "dimension": "end",
     "rendermode": "smooth_lighting",
+    'minzoom': MINZOOM,
 }
 
 outputdir = "/home/minecuna/overviewer"
