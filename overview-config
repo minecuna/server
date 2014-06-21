@@ -56,12 +56,12 @@ manualpois = [{
     'name': 'Perry 2.0',
     'description': 'Can you find the trapdoor?',
 }, {
-    'id': 'arctic-base-1',
-    'x': -680,
+    'id': 'farm',
+    'x': -136,
     'y': 64,
-    'z': 260,
-    'name': 'Arctic Base 1',
-    'description': 'Appropriate security clearance is required to access this facility.',
+    'z': -289,
+    'name': 'Witch Farm',
+    'description': 'The Blight',
 }, {
     'id': 'base',
     'x': -219,
@@ -69,6 +69,27 @@ manualpois = [{
     'z': 1544,
     'name': 'Horse Base',
     'description': 'Need a horse? Go here.',
+}, {
+    'id': 'mine',
+    'x': 327,
+    'y': 64,
+    'z': 366,
+    'name': 'Quarry',
+    'description': 'Safety rules must be followed at all times.',
+}, {
+    'id': 'farm',
+    'x': -728,
+    'y': 64,
+    'z': 247,
+    'name': 'Wither Farm',
+    'description': 'DANGER WILL ROBINSON',
+}, {
+    'id': 'base',
+    'x': -623,
+    'y': 64,
+    'z': 284,
+    'name': 'Arctic Base 1',
+    'description': 'Appropriate security clearance is required to access this facility.',
 }]
 
 worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
