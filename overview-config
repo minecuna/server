@@ -1,9 +1,9 @@
 # flake8: noqa
 manualpois = [{
     'id': 'base',
-    'x': 196,
+    'x': 228,
     'y': 64,
-    'z': 236,
+    'z': 233,
     'name': 'Main Base',
     'description': 'Visit for all your farming needs',
 }, {
