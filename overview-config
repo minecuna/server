@@ -148,7 +148,7 @@ markers = [{
 
 MINZOOM = 3
 
-renders["day-0"] = {  # noqa
+renders["day-0"] = {
     "world": "minecuna",
     "title": "Day: North",
     "rendermode": "smooth_lighting",
@@ -158,7 +158,7 @@ renders["day-0"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
-renders["day-90"] = {  # noqa
+renders["day-90"] = {
     "world": "minecuna",
     "title": "Day: East",
     "rendermode": "smooth_lighting",
@@ -168,7 +168,7 @@ renders["day-90"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
-renders["day-180"] = {  # noqa
+renders["day-180"] = {
     "world": "minecuna",
     "title": "Day: South",
     "rendermode": "smooth_lighting",
@@ -178,7 +178,7 @@ renders["day-180"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
-renders["day-270"] = {  # noqa
+renders["day-270"] = {
     "world": "minecuna",
     "title": "Day: West",
     "rendermode": "smooth_lighting",
@@ -188,7 +188,7 @@ renders["day-270"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
-renders["night"] = {  # noqa
+renders["night"] = {
     "world": "minecuna",
     "title": "Night",
     "rendermode": "smooth_night",
@@ -197,7 +197,7 @@ renders["night"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
-renders["nether"] = {  # noqa
+renders["nether"] = {
     "world": "minecuna",
     "title": "Nether",
     "rendermode": "nether",
@@ -205,7 +205,7 @@ renders["nether"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
-renders["theend"] = {  # noqa
+renders["theend"] = {
     "world": "minecuna",
     "title": "The End",
     "dimension": "end",
