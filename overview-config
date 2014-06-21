@@ -92,8 +92,6 @@ manualpois = [{
     'description': 'Appropriate security clearance is required to access this facility.',
 }]
 
-worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
-
 def bases(poi):
     html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
     if poi['id'] == 'base':
@@ -215,4 +213,5 @@ renders["theend"] = {  # noqa
     'minzoom': MINZOOM,
 }
 
+worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
 outputdir = "/home/minecuna/overviewer"
