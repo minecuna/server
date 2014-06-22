@@ -161,6 +161,12 @@ def mines(poi):
         except KeyError:
             return poi['name'] + '\n'
 
+def players(poi):
+    url_base = '/avatars/{}.png'
+    if poi['id'] == 'Player':
+        poi['icon'] = url_base.format(poi['EntityId'].lower())
+        return poi['EntityId']
+
 def towns(poi):
     html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
     if poi['id'] == 'town':
@@ -190,6 +196,13 @@ markers = [{
     'icon': 'icons/marker_town_red.png',
     'checked': False,
 }]
+
+players =  {
+    'name': 'Players',
+    'filterFunction': players,
+    'icon': 'icons/marker_mine_red.png',
+    'checked': False,
+}
 
 MINZOOM = 3
 
