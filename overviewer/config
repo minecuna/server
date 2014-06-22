@@ -264,7 +264,7 @@ renders["night"] = {
 renders["nether"] = {
     "world": "minecuna",
     "title": "Nether",
-    "rendermode": "nether",
+    "rendermode": "nether_smooth_lighting",
     "dimension": "nether",
     'markers': [players],
     'minzoom': MINZOOM,
