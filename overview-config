@@ -213,5 +213,6 @@ renders["theend"] = {
     'minzoom': MINZOOM,
 }
 
+customwebassets = "/home/minecuna/config/overviewer/assets/"
 worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
 outputdir = "/home/minecuna/overviewer"
