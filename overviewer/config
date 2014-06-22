@@ -272,5 +272,5 @@ renders["theend"] = {
 }
 
 customwebassets = "/home/minecuna/config/overviewer/assets/"
-worlds["minecuna"] = "/home/minecuna/minecraft/world"  # noqa
+worlds["minecuna"] = "/home/minecuna/minecraft/world"
 outputdir = "/home/minecuna/overviewer"
