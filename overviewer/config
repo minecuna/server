@@ -175,7 +175,7 @@ def towns(poi):
         except KeyError:
             return poi['name'] + '\n'
 
-markers = [{
+overworld_markers = [{
     'name': 'Bases',
     'filterFunction': bases,
     'icon': 'icons/marker_tower_red.png',
@@ -203,6 +203,8 @@ players =  {
     'icon': 'icons/marker_mine_red.png',
     'checked': False,
 }
+
+markers = overworld_markers + [players]
 
 MINZOOM = 3
 
@@ -260,6 +262,7 @@ renders["nether"] = {
     "title": "Nether",
     "rendermode": "nether",
     "dimension": "nether",
+    'markers': [players],
     'minzoom': MINZOOM,
 }
 
@@ -268,6 +271,7 @@ renders["theend"] = {
     "title": "The End",
     "dimension": "end",
     "rendermode": "smooth_lighting",
+    'markers': [players],
     'minzoom': MINZOOM,
 }
 
