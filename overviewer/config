@@ -127,6 +127,7 @@ overworld_pois = [{
     'description': 'You must pay the Iron Price.',
 }]
 
+# MARKER FILTERS
 def bases(poi):
     html = '<div><span class="name">{}</span><span class="coordinates">{x} | {y} | {z}</span><span class="description">{}</span></div>'
     if poi['id'] == 'base':
@@ -175,6 +176,8 @@ def towns(poi):
         except KeyError:
             return poi['name'] + '\n'
 
+
+# MARKER TYPES
 overworld_markers = [{
     'name': 'Bases',
     'filterFunction': bases,
@@ -208,6 +211,7 @@ markers = overworld_markers + [players]
 
 MINZOOM = 3
 
+# RENDERS
 renders["day-0"] = {
     "world": "minecuna",
     "title": "Day: North",
