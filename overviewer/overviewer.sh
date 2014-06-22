@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Generate the output
-config="$HOME/config/overview-config"
+config="$HOME/config/overviewer/config"
 logs="/var/log/minecraft/overviewer.log"
 overviewer="/usr/bin/overviewer.py"
 s3cfg="$HOME/.s3cfg-overviewer"
