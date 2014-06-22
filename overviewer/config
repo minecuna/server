@@ -128,10 +128,20 @@ manualpois = [{
 }]
 
 def bases(poi):
-    html = '<div><h3>{}</h3> <span class="type">{}</span><span class="description">{}</span></div>'
+    html = '<div><span class="name">{}</span><span class="coordinates">{x} | {y} | {z}</span><span class="description">{}</span></div>'
     if poi['id'] == 'base':
+        args = (
+            poi['name'],
+            poi['description'],
+        )
+
+        kwargs = {
+            'x': poi['x'],
+            'y': poi['y'],
+            'z': poi['z'],
+        }
         try:
-            return (poi['name'], html.format(poi['name'], 'Base', poi['description']))
+            return (poi['name'], html.format(*args, **kwargs))
         except KeyError:
             return poi['name'] + '\n'
 
