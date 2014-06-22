@@ -1,5 +1,5 @@
 # flake8: noqa
-manualpois = [{
+overworld_pois = [{
     'id': 'base',
     'x': 183,
     'y': 109,
@@ -211,7 +211,7 @@ renders["day-0"] = {
     "title": "Day: North",
     "rendermode": "smooth_lighting",
     "northdirection": "upper-left",
-    'manualpois': manualpois,
+    'manualpois': overworld_pois,
     'markers': markers,
     'minzoom': MINZOOM,
 }
@@ -221,7 +221,7 @@ renders["day-90"] = {
     "title": "Day: East",
     "rendermode": "smooth_lighting",
     "northdirection": "upper-right",
-    'manualpois': manualpois,
+    'manualpois': overworld_pois,
     'markers': markers,
     'minzoom': MINZOOM,
 }
@@ -231,7 +231,7 @@ renders["day-180"] = {
     "title": "Day: South",
     "rendermode": "smooth_lighting",
     "northdirection": "lower-right",
-    'manualpois': manualpois,
+    'manualpois': overworld_pois,
     'markers': markers,
     'minzoom': MINZOOM,
 }
@@ -241,7 +241,7 @@ renders["day-270"] = {
     "title": "Day: West",
     "rendermode": "smooth_lighting",
     "northdirection": "lower-left",
-    'manualpois': manualpois,
+    'manualpois': overworld_pois,
     'markers': markers,
     'minzoom': MINZOOM,
 }
@@ -250,7 +250,7 @@ renders["night"] = {
     "world": "minecuna",
     "title": "Night",
     "rendermode": "smooth_night",
-    'manualpois': manualpois,
+    'manualpois': overworld_pois,
     'markers': markers,
     'minzoom': MINZOOM,
 }
